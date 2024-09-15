@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./AuthPage.css";
 
-import L1 from "../../Assets/Images/Leaves/1.png";
-import L3 from "../../Assets/Images/Leaves/3.png";
-import L4 from "../../Assets/Images/Leaves/4.png";
-import L5 from "../../Assets/Images/Leaves/5.png";
-import L7 from "../../Assets/Images/Leaves/7.png";
-import L2Dark from "../../Assets/Images/Leaves/2Dark.png";
-import L3Dark from "../../Assets/Images/Leaves/3Dark.png";
-import L5Dark from "../../Assets/Images/Leaves/5Dark.png";
-import L6Dark from "../../Assets/Images/Leaves/6Dark.png";
+import L1 from "../../Assets/Images/Leaves/1.webp";
+import L3 from "../../Assets/Images/Leaves/3.webp";
+import L4 from "../../Assets/Images/Leaves/4.webp";
+import L5 from "../../Assets/Images/Leaves/5.webp";
+import L7 from "../../Assets/Images/Leaves/7.webp";
+import L2Dark from "../../Assets/Images/Leaves/2Dark.webp";
+import L3Dark from "../../Assets/Images/Leaves/3Dark.webp";
+import L5Dark from "../../Assets/Images/Leaves/5Dark.webp";
+import L6Dark from "../../Assets/Images/Leaves/6Dark.webp";
 
 import { motion } from "framer-motion";
 
