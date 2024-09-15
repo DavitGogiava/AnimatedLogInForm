@@ -1,0 +1,1612 @@
+.auth-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    background-image: url("../../Assets/Images/Leaves/BackTexture3.png");
+    background-repeat: repeat; 
+    background-size: cover; 
+
+}
+
+
+.auth-wrapper .auth-container{
+    width: 90%;
+    height: calc(100vh - 3px);
+    background-color: rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #B2C5B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.vertical-line {
+    height: 90%;
+    width: 1px; 
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.auth-container .auth-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #B2C5B2;
+    flex-direction: row;
+}
+
+.auth-inside .left,
+.auth-inside .right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    z-index: 99;
+    margin-top: 15vh;
+}
+
+.auth-inside .title{
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    color: rgb(58, 58, 58);
+    font-family: Gilroy;
+}
+
+.left .registration-form,
+.right .login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;    
+}
+
+
+.auth-inside .inputBox {
+    position: relative;
+    width: 50%;
+    margin-bottom: 3vh;
+
+}
+
+.inputBox input{
+    width: 95%;
+    height: 5vh;
+    border: 0.3vh solid rgba(101, 101, 101, 0.25);
+    background: #B2C5B2;
+    border-radius: 1vh;
+    outline: none;
+    color: #2c2c2c;
+    font-size: 2.5vh;
+    transition: 0.5s;
+    padding-left: 1vh;
+    font-family: Gilroy;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1vh;
+    pointer-events: none;
+    font-size: 2.5vh;
+    color: rgba(101, 101, 101, 0.484);
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: Gilroy;
+}
+
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: green;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1.2vh;
+    padding: 0 1vh;
+    background: #B2C5B2;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    letter-spacing: 0.2em;
+}
+
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+
+    background: green;
+    color: #1d2b3a;
+    border-radius: 2px;
+
+}
+
+
+.inputBox:nth-child(4) input:valid ~ span,
+.inputBox:nth-child(4) input:focus ~ span{
+
+    background: green;
+    color: #1d2b3a;
+    border-radius: 2px;
+
+}
+
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 2px solid #268016;
+}
+
+
+
+
+.auth-inside button{
+    width: 50%;
+    height: 5vh;
+    border: 2px solid rgba(101, 101, 101, 0.25);
+    border-radius: 1vh;
+    background-color: #B2C5B2;
+    margin-top: 3vh;
+    font-family: Gilroy;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s ease-in-out;
+    color: rgba(101, 101, 101, 0.484);
+    font-size: 2vh;
+}
+
+
+.auth-inside button:hover{
+    background-color: #96a896;
+    color: rgb(57, 57, 57);
+    border: 2px solid green;
+}
+
+
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+
+
+
+
+
+.bud-leaf img{
+    width: 100%;
+    height: 100%;
+}
+
+.auth-container .bud-leaf.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -30vh;
+    height: 65vh;
+    width:  65vh;
+    z-index: 10;
+    opacity: 1;
+    transform: rotate(-40deg);
+}
+
+
+
+
+
+.auth-container .bud-leaf.left.bottom{
+    position: absolute;
+    bottom:  -25vh;
+    left: -20vh;
+    height: 65vh;
+    width:  65vh;
+    transform: rotate(40deg);
+    z-index: 11;
+}
+
+
+
+.auth-container .bud-leaf.right.bottom{
+    position: absolute;
+    bottom:  -22vh;
+    right: -22vh;
+    height: 65vh;
+    width:  65vh;
+    z-index: 11;
+    transform: rotate(-40deg);
+}
+
+
+
+.auth-container .bud-leaf.right.middle.big{
+    position: absolute;
+    right: -23vh;
+    top: 8vh;
+    height: 65vh;
+    width:  65vh;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(-120deg);
+}
+
+.auth-container .bud-leaf.right.middle.small{
+    position: absolute;
+    top:  30vh;
+    right: -12vh;
+    height: 35vh;
+    height: 35vh;
+    z-index: 11;
+    transform: rotate(-20deg);
+}
+
+
+
+.auth-container .bud-leaf.left.middle.big{
+    position: absolute;
+    left: -22vh;
+    top: 10vh;
+    height: 65vh;
+    width:  65vh;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(250deg);
+}
+
+.auth-container .bud-leaf.left.middle.small{
+    position: absolute;
+    top:  24vh;
+    left: -13vh;
+    height: 35vh;
+    height: 35vh;
+    z-index: 11;
+    transform: rotate(60deg);
+}
+
+
+
+
+
+.auth-container .bud-leaf.down.left{
+    position: absolute;
+    left: 42vh;
+    bottom: -23vh;
+    height: 45vh;
+    width: 45vh;
+    z-index: 11;
+    transform: rotate(-5deg);
+}
+
+
+.auth-container .bud-leaf.down.right{
+    position: absolute;
+    right: 42vh;
+    bottom: -23vh;
+    height: 45vh;
+    width: 45vh;
+    transform: rotate(20deg);
+    z-index: 11;
+    transform: rotate(5deg);
+}
+
+
+
+
+.auth-container .bud-leaf.corner.left{
+    position: absolute;
+    left: 18vh;
+    bottom: -8vh;
+    height: 40vh;
+    width: 40vh;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(90deg);
+}
+
+
+.auth-container .bud-leaf.corner.right{
+    position: absolute;
+    right: 14vh;
+    bottom: -10vh;
+    height: 40vh;
+    width: 40vh;
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.auth-container .bud-leaf.central.left{
+    position: absolute;
+    left: 42vh;
+    bottom: 4vh;
+    height: 28vh;
+    width: 28vh;
+    transform: rotate(30deg);
+    opacity: 1;
+    z-index: 11;
+}
+
+
+.auth-container .bud-leaf.central.right{
+    position: absolute;
+    right: 42vh;
+    bottom: 4vh;
+    height: 28vh;
+    width: 28vh;
+    transform: rotate(-30deg);
+    opacity: 1;
+    z-index: 11;
+}
+
+
+
+
+/*===============================================*/
+
+.auth-container .bud-leaf.center.active{
+    animation: wiggleRightBottom 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.left.bottom.active{
+    animation: wiggleLeftBottom 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.right.bottom.active{
+    animation: wiggleRightBottom 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.right.middle.big.active{
+    animation: wiggleRightMiddleBig 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.right.middle.small.active{
+    animation: wiggleRightMiddleSmall 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.left.middle.big.active{
+    animation: wiggleLeftMiddleBig 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.left.middle.small.active{
+    animation: wiggleLeftMiddleSmall 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.down.left.active{
+    animation: wiggleDownLeft 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.down.right.active{
+    animation: wiggleDownRight 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.corner.left.active{
+    animation: wiggleCornerLeft 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.corner.right.active{
+    animation: wiggleCornerRight 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.central.left.active{
+    animation: insertCenterLeft 3s infinite ease-in-out;
+}
+
+.auth-container .bud-leaf.central.right.active{
+    animation: insertCenterRight 3s infinite ease-in-out;
+}
+
+
+
+
+@keyframes wiggleLeftBottom{
+    10%{
+        transform: rotate(120deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    25%{
+        height: 65vh;
+        width:  65vh;
+    }
+
+    30%{
+        transform: rotate(30deg);
+    }
+
+    40%{
+        transform: rotate(60deg);
+    }
+
+    55%{
+        transform: rotate(40deg);
+    }
+
+    70%{
+        transform: rotate(45deg);
+    }
+    90%{
+        transform: rotate(40deg);
+    }
+
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+
+
+@keyframes wiggleRightBottom{
+    0%{
+        transform: rotate(-120deg);
+        height: 9vh;
+        width: 9vh;
+    }
+
+    15%{
+        height: 65vh;
+        width:  65vh;
+    }
+
+    20%{
+        transform: rotate(-30deg);
+    }
+
+    30%{
+        transform: rotate(-60deg);
+    }
+
+    45%{
+        transform: rotate(-40deg);
+    }
+
+    60%{
+        transform: rotate(-45deg);
+    }
+    80%{
+        transform: rotate(-40deg);
+    }
+
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+
+
+@keyframes wiggleRightMiddleBig{
+    0%{
+        transform: rotate(-10deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    15%{
+        height: 65vh;
+        width: 65vh;
+    }
+
+    20%{
+        transform: rotate(-150deg);
+    }
+
+    30%{
+        transform: rotate(-110deg);
+    }
+
+    45%{
+        transform: rotate(-125deg);
+    }
+
+    60%{
+        transform: rotate(-115deg);
+    }
+    80%{
+        transform: rotate(-120deg);
+    }
+
+    100%{
+        transform: rotate(-120deg);
+    }
+}
+
+
+
+@keyframes wiggleRightMiddleSmall{
+    0%{
+        transform: rotate(-10deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    15%{
+        height: 35vh;
+        width: 35vh;
+    }
+
+    20%{
+        transform: rotate(-60deg);
+    }
+
+    30%{
+        transform: rotate(-10deg);
+    }
+
+    45%{
+        transform: rotate(-25deg);
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+
+
+
+
+@keyframes wiggleLeftMiddleBig{
+    0%{
+        transform: rotate(150deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    15%{
+        height: 65vh;
+        width: 65vh;
+    }
+
+    20%{
+        transform: rotate(280deg);
+    }
+
+    30%{
+        transform: rotate(240deg);
+    }
+
+    45%{
+        transform: rotate(255deg);
+    }
+
+    60%{
+        transform: rotate(245deg);
+    }
+    80%{
+        transform: rotate(250deg);
+    }
+
+    100%{
+        transform: rotate(250deg);
+    }
+}
+
+
+
+@keyframes wiggleLeftMiddleSmall{
+    10%{
+        transform: rotate(10deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    25%{
+        height: 35vh;
+        width: 35vh;
+    }
+
+    30%{
+        transform: rotate(100deg);
+    }
+
+    40%{
+        transform: rotate(50deg);
+    }
+
+    55%{
+        transform: rotate(65deg);
+    }
+
+    70%{
+        transform: rotate(55deg);
+    }
+    90%{
+        transform: rotate(60deg);
+    }
+
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+
+
+
+
+
+@keyframes wiggleDownLeft{
+    0%{
+        transform: rotate(-200deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    15%{
+        height: 45vh;
+        width: 45vh;
+    }
+
+    20%{
+        transform: rotate(20deg);
+    }
+
+    30%{
+        transform: rotate(-20deg);
+    }
+
+    45%{
+        transform: rotate(0deg);
+    }
+
+    60%{
+        transform: rotate(-10deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+
+
+@keyframes wiggleDownRight{
+    10%{
+        transform: rotate(200deg);
+        height: 8vh;
+        width: 8vh;
+    }
+
+    25%{
+        height: 45vh;
+        width: 45vh;
+    }
+
+    30%{
+        transform: rotate(-20deg);
+    }
+
+    40%{
+        transform: rotate(20deg);
+    }
+
+    55%{
+        transform: rotate(0deg);
+    }
+
+    70%{
+        transform: rotate(10deg);
+    }
+    90%{
+        transform: rotate(5deg);
+    }
+
+    100%{
+        transform: rotate(5deg);
+    }
+}
+
+
+
+
+
+@keyframes wiggleCornerLeft{
+    10%{
+        transform: rotate(170deg);
+        height: 8vh;
+        width: 8vh;
+        bottom: -20vh;
+    }    
+
+    25%{
+        height: 40vh;
+        width: 40vh;
+        bottom: -8vh;
+    }
+
+    30%{
+        transform: rotate(80deg);
+    }
+
+    40%{
+        transform: rotate(110deg);
+    }
+
+    55%{
+        transform: rotate(80deg);
+    }
+
+    70%{
+        transform: rotate(95deg);
+    }
+    90%{
+        transform: rotate(90deg);
+    }
+
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+@keyframes wiggleCornerRight{
+    0%{
+        transform: rotate(-170deg);
+        height: 8vh;
+        width: 8vh;
+        bottom: -200vh;
+    }
+
+    15%{
+        height: 40vh;
+        width: 40vh;
+        bottom: -8vh;
+    }
+
+    20%{
+        transform: rotate(-80deg);
+    }
+
+    30%{
+        transform: rotate(-110deg);
+    }
+
+    45%{
+        transform: rotate(-80deg);
+    }
+
+    60%{
+        transform: rotate(-95deg);
+    }
+    80%{
+        transform: rotate(-90deg);
+    }
+
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+
+
+
+@keyframes insertCenterRight{
+    10%{
+        height: 3vh;
+        width: 3vh;
+        right: -40vh;
+        bottom: -60vh;
+    }
+
+    27%{
+        right: 42vh;
+        bottom: 4vh;
+    }
+
+    30%{
+        height: 28vh;
+        width: 28vh;
+    }
+
+    38%{
+        height: 23vh;
+        width: 23vh;
+    }
+    46%{
+        height: 28vh;
+        width: 28vh;
+    }
+
+    100%{
+        height: 28vh;
+        width: 28vh;
+    }
+}
+
+
+@keyframes insertCenterLeft{
+    10%{
+        height: 3vh;
+        width: 3vh;
+        left: -40vh;
+        bottom: -60vh;
+    }
+
+    27%{
+        left: 42vh;
+        bottom: 4vh;
+    }
+
+    30%{
+        height: 28vh;
+        width: 28vh;
+    }
+
+    38%{
+        height: 23vh;
+        width: 23vh;
+    }
+    46%{
+        height: 28vh;
+        width: 28vh;
+    }
+
+    100%{
+        height: 28vh;
+        width: 28vh;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .auth-wrapper .auth-container{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 90%;
+        height: 85vh;
+        background-color: rgba(0, 0, 0, 0.12);
+        position: relative;
+        overflow: hidden;
+        border-radius: 2vh;
+        border: 2px solid rgb(212, 212, 212);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .vertical-line {
+        display: none;
+    }
+    
+    .auth-inside .left,
+    .auth-inside .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        z-index: 99;
+        margin-top: 0;
+    }
+
+    
+    .auth-inside .title{
+        font-size: 3vh;
+        margin-bottom: 0px;
+    }
+    
+    .auth-inside .select-type{
+        font-size: 1.8vh;
+        margin-bottom: 2vh;
+        color: green;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2vh;
+        text-decoration: underline;
+    }
+    
+    .auth-inside .inputBox {
+        position: relative;
+        width: 70%;
+        margin-bottom: 2.2vh;
+        
+    }
+    
+    .inputBox input{
+        height: 4vh;
+        font-size: 1.5vh;
+        padding-left: 1vh;
+    }
+    
+    .inputBox span{
+        padding: 1.5vh;
+        font-size: 1.5vh;
+    }
+    
+    
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span{
+        font-size: 1.3vh;
+        padding: 0 0.5vh;
+    }
+    
+    
+    .auth-inside button{
+        width: 50%;
+        height: 5vh;
+        border: 2px solid rgba(101, 101, 101, 0.25);
+        border-radius: 10px;
+        margin-top: 20px;
+        font-family: Gilroy;
+        font-size: 1.5vh;
+    }
+    
+    
+    .auth-inside button:hover{
+        background-color: #96a896;
+        color: rgb(57, 57, 57);
+        border: 2px solid green;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leaf Animations*/
+.auth-container .bud-leaf.center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -50px;
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+    opacity: 1;
+    transform: rotate(-40deg);
+}
+
+
+
+
+
+.auth-container .bud-leaf.left.bottom{
+    position: absolute;
+    bottom:  -30px;
+    left: -70px;
+    height: 200px;
+    width: 200px;
+    transform: rotate(40deg);
+    z-index: 11;
+}
+
+
+
+.auth-container .bud-leaf.right.bottom{
+    position: absolute;
+    bottom:  -30px;
+    right: -70px;
+    height: 200px;
+    width: 200px;
+    z-index: 11;
+    transform: rotate(-40deg);
+}
+
+
+
+.auth-container .bud-leaf.right.middle.big{
+    position: absolute;
+    right: -100px;
+    top: 90px;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(-120deg);
+}
+
+.auth-container .bud-leaf.right.middle.small{
+    position: absolute;
+    top:  260px;
+    right: -60px;
+    height: 120px;
+    width: 120px;
+    z-index: 11;
+    transform: rotate(-20deg);
+}
+
+
+
+.auth-container .bud-leaf.left.middle.big{
+    position: absolute;
+    left: -110px;
+    top: 170px;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(250deg);
+}
+
+.auth-container .bud-leaf.left.middle.small{
+    position: absolute;
+    top:  70px;
+    left: -60px;
+    height: 120px;
+    width: 120px;
+    z-index: 11;
+    transform: rotate(60deg);
+}
+
+
+
+
+
+.auth-container .bud-leaf.down.left{
+    position: absolute;
+    left: 60px;
+    bottom: -50px;
+    height: 120px;
+    width: 120px;
+    z-index: 11;
+    transform: rotate(-5deg);
+}
+
+
+.auth-container .bud-leaf.down.right{
+    position: absolute;
+    right: 60px;
+    bottom: -50px;
+    height: 120px;
+    width: 120px;
+    transform: rotate(20deg);
+    z-index: 11;
+    transform: rotate(5deg);
+}
+
+
+
+
+.auth-container .bud-leaf.corner.left{
+    position: absolute;
+    left: -45px;
+    bottom: 120px;
+    height: 120px;
+    width: 120px;
+    opacity: 1;
+    z-index: 10;
+    transform: rotate(90deg);
+}
+
+
+.auth-container .bud-leaf.corner.right{
+    position: absolute;
+    right: -50px;
+    bottom: 130px;
+    height: 120px;
+    width: 120px;
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.auth-container .bud-leaf.central.left{
+    position: absolute;
+    left: -30px;
+    bottom: 210px;
+    height: 120px;
+    width: 120px;
+    transform: rotate(60deg);
+    opacity: 1;
+    z-index: 11;
+}
+
+
+.auth-container .bud-leaf.central.right{
+    position: absolute;
+    right: -60px;
+    bottom: 190px;
+    height: 120px;
+    width: 120px;
+    transform: rotate(-30deg);
+    opacity: 1;
+    z-index: 11;
+}
+
+
+
+
+
+
+@keyframes wiggleLeftBottom{
+    10%{
+        transform: rotate(120deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    25%{
+        height: 200px;
+        width: 200px;
+    }
+
+    30%{
+        transform: rotate(30deg);
+    }
+
+    40%{
+        transform: rotate(60deg);
+    }
+
+    55%{
+        transform: rotate(40deg);
+    }
+
+    70%{
+        transform: rotate(45deg);
+    }
+    90%{
+        transform: rotate(40deg);
+    }
+
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+
+
+@keyframes wiggleRightBottom{
+    0%{
+        transform: rotate(-120deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    15%{
+        height: 200px;
+        width: 200px;
+    }
+
+    20%{
+        transform: rotate(-30deg);
+    }
+
+    30%{
+        transform: rotate(-60deg);
+    }
+
+    45%{
+        transform: rotate(-40deg);
+    }
+
+    60%{
+        transform: rotate(-45deg);
+    }
+    80%{
+        transform: rotate(-40deg);
+    }
+
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+
+
+@keyframes wiggleRightMiddleBig{
+    0%{
+        transform: rotate(-10deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    15%{
+        height: 200px;
+        width: 200px;
+    }
+
+    20%{
+        transform: rotate(-150deg);
+    }
+
+    30%{
+        transform: rotate(-110deg);
+    }
+
+    45%{
+        transform: rotate(-125deg);
+    }
+
+    60%{
+        transform: rotate(-115deg);
+    }
+    80%{
+        transform: rotate(-120deg);
+    }
+
+    100%{
+        transform: rotate(-120deg);
+    }
+}
+
+
+
+@keyframes wiggleRightMiddleSmall{
+    0%{
+        transform: rotate(-10deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    15%{
+        height: 120px;
+        width: 120px;
+    }
+
+    20%{
+        transform: rotate(-60deg);
+    }
+
+    30%{
+        transform: rotate(-10deg);
+    }
+
+    45%{
+        transform: rotate(-25deg);
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+
+
+
+
+@keyframes wiggleLeftMiddleBig{
+    0%{
+        transform: rotate(150deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    15%{
+        height: 200px;
+        width: 200px;
+    }
+
+    20%{
+        transform: rotate(280deg);
+    }
+
+    30%{
+        transform: rotate(240deg);
+    }
+
+    45%{
+        transform: rotate(255deg);
+    }
+
+    60%{
+        transform: rotate(245deg);
+    }
+    80%{
+        transform: rotate(250deg);
+    }
+
+    100%{
+        transform: rotate(250deg);
+    }
+}
+
+
+
+@keyframes wiggleLeftMiddleSmall{
+    10%{
+        transform: rotate(10deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    25%{
+        height: 120px;
+        width: 120px;
+    }
+
+    30%{
+        transform: rotate(100deg);
+    }
+
+    40%{
+        transform: rotate(50deg);
+    }
+
+    55%{
+        transform: rotate(65deg);
+    }
+
+    70%{
+        transform: rotate(55deg);
+    }
+    90%{
+        transform: rotate(60deg);
+    }
+
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+
+
+
+
+
+@keyframes wiggleDownLeft{
+    0%{
+        transform: rotate(-200deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    15%{
+        height: 120px;
+        width: 120px;
+    }
+
+    20%{
+        transform: rotate(20deg);
+    }
+
+    30%{
+        transform: rotate(-20deg);
+    }
+
+    45%{
+        transform: rotate(0deg);
+    }
+
+    60%{
+        transform: rotate(-10deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+
+
+@keyframes wiggleDownRight{
+    10%{
+        transform: rotate(200deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    25%{
+        height: 120px;
+        width: 120px;
+    }
+
+    30%{
+        transform: rotate(-20deg);
+    }
+
+    40%{
+        transform: rotate(20deg);
+    }
+
+    55%{
+        transform: rotate(0deg);
+    }
+
+    70%{
+        transform: rotate(10deg);
+    }
+    90%{
+        transform: rotate(5deg);
+    }
+
+    100%{
+        transform: rotate(5deg);
+    }
+}
+
+
+
+
+
+@keyframes wiggleCornerLeft{
+    10%{
+        transform: rotate(170deg);
+        height: 50px;
+        width: 50px;
+    }
+
+    25%{
+        height: 120px;
+        width: 120px;
+    }
+
+    30%{
+        transform: rotate(80deg);
+    }
+
+    40%{
+        transform: rotate(110deg);
+    }
+
+    55%{
+        transform: rotate(80deg);
+    }
+
+    70%{
+        transform: rotate(95deg);
+    }
+    90%{
+        transform: rotate(90deg);
+    }
+
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+@keyframes wiggleCornerRight{
+    0%{
+        transform: rotate(-170deg);
+        height: 50px;
+        width: 50px;
+
+    }
+
+    15%{
+        height: 120px;
+        width: 120px;
+    }
+
+    20%{
+        transform: rotate(-80deg);
+    }
+
+    30%{
+        transform: rotate(-110deg);
+    }
+
+    45%{
+        transform: rotate(-80deg);
+    }
+
+    60%{
+        transform: rotate(-95deg);
+    }
+    80%{
+        transform: rotate(-90deg);
+    }
+
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+
+
+
+@keyframes insertCenterRight{
+    10%{
+        height: 10px;
+        width: 10px;
+    }
+
+
+    30%{
+        height: 120px;
+        width: 120px;
+    }
+
+    38%{
+        height: 90px;
+        width: 90px;
+    }
+    46%{
+        height: 120px;
+        width: 120px;
+    }
+
+    100%{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+
+@keyframes insertCenterLeft{
+    10%{
+        height: 10px;
+        width: 10px;
+    }
+
+
+    30%{
+        height: 120px;
+        width: 120px;
+    }
+
+    38%{
+        height: 90px;
+        width: 90px;
+    }
+    46%{
+        height: 120px;
+        width: 120px;
+    }
+
+    100%{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+
+
+}
