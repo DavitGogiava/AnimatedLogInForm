@@ -69,22 +69,22 @@ const AuthPage = () => {
 
                 <form className="registration-form" noValidate>
                   <div className="inputBox">
-                    <input type="text" required="true" name="firstname" />
+                    <input type="text" required="true" name="firstname" autocomplete="off"/>
                     <span>First name</span>
                   </div>
 
                   <div className="inputBox">
-                    <input type="text" required="true" name="lastname" />
+                    <input type="text" required="true" name="lastname" autocomplete="off"/>
                     <span>Last name</span>
                   </div>
 
                   <div className="inputBox">
-                    <input type="text" required="true" name="email" />
+                    <input type="text" required="true" name="email" autocomplete="off"/>
                     <span>Email</span>
                   </div>
 
                   <div className="inputBox">
-                    <input type="password" required="true" name="password" />
+                    <input type="password" required="true" name="password" autocomplete="off"/>
                     <span>Password</span>
                   </div>
 
@@ -108,12 +108,12 @@ const AuthPage = () => {
 
                 <form className="login-form" noValidate>
                   <div className="inputBox">
-                    <input type="text" required="true" name="email" />
+                    <input type="text" required="true" name="email" autocomplete="off"/>
                     <span>Email</span>
                   </div>
 
                   <div className="inputBox">
-                    <input type="password" required="true" name="password" />
+                    <input type="password" required="true" name="password" autocomplete="off"/>
                     <span>Password</span>
                   </div>
 
@@ -145,22 +145,22 @@ const AuthPage = () => {
                     noValidate
                   >
                     <div className="inputBox">
-                      <input type="text" required="true" name="firstname" />
+                      <input type="text" required="true" name="firstname" autocomplete="off"/>
                       <span>First Name</span>
                     </div>
 
                     <div className="inputBox">
-                      <input type="text" required="true" name="lastname" />
+                      <input type="text" required="true" name="lastname" autocomplete="off"/>
                       <span>Last Name</span>
                     </div>
 
                     <div className="inputBox">
-                      <input type="text" required="true" name="email" />
+                      <input type="text" required="true" name="email" autocomplete="off"/>
                       <span>Email</span>
                     </div>
 
                     <div className="inputBox">
-                      <input type="password" required="true" name="password" />
+                      <input type="password" required="true" name="password" autocomplete="off"/>
                       <span>Password</span>
                     </div>
 
@@ -189,12 +189,12 @@ const AuthPage = () => {
                     noValidate
                   >
                     <div className="inputBox">
-                      <input type="text" required="true" name="email" />
+                      <input type="text" required="true" name="email" autocomplete="off"/>
                       <span>Email</span>
                     </div>
 
                     <div className="inputBox">
-                      <input type="password" required="true" name="password" />
+                      <input type="password" required="true" name="password" autocomplete="off"/>
                       <span>Password</span>
                     </div>
 
